@@ -1,0 +1,43 @@
+package java_fundamentals;
+
+/**
+ *
+ * @author Amu Codes
+ */
+public class Java_fundamentals {
+
+    
+    public static void main(String[] args) {
+        
+        // Day 1 Data Types  and Operators 
+        
+        String message = "Hell World \n Lets do some Math";
+        System.out.println(message);
+        
+       // Integer 
+       int y = 20;
+       int x = 55;
+       
+       int Calculate = x + y;
+        System.out.println(y + " + "+ x +"= "+ Calculate);
+        
+      // Double
+      
+      String money = ("How much money you got:");
+      Double $1=50.0, $2=4.9; 
+      Double cal =$1 + $2;
+        System.out.println(money + cal );
+        
+        float f1= 60 , f2= 33;
+        System.out.println(f1+" + "+f2+"="+f1 +f2);
+        
+        boolean what = true;// true or false
+  
+        
+        
+        
+        
+      
+    }
+    
+}
