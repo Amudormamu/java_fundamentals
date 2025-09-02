@@ -1,0 +1,74 @@
+package calculator;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Amu Codes
+ */
+public class Calculator {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int num1, num2;
+        String operator;
+        System.out.println("Lets Calculate");
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Give me your first Number :");
+        num1 = input.nextInt();
+        
+         System.out.println("give me an operator :");
+        operator =input.next();
+        
+        
+       System.out.println("Give me your 2nd number:");
+        num2 = input.nextInt();
+        
+        
+        if (operator.equals("+")) {
+            System.out.println("Your answer is :"+ add(num1,num2));   
+        }
+        else if(operator.equals("-")){
+            System.out.println("Your answer is :"+ sub(num1,num2));  
+        }
+         else if(operator.equals("*")){
+            System.out.println("Your answer is :"+ mult(num1,num2));  
+        }
+         else if(operator.equals("/")){
+            System.out.println("Your answer is :"+ div(num1,num2));  
+        }
+                
+    }
+    public static int add(int num1 , int num2){
+     int cal = num1 + num2;
+     return cal;
+    
+    
+    }
+    
+     public static int sub(int num1 , int num2){
+     int cal = num1 - num2;
+     return cal;
+    
+    
+    }
+     
+      public static int mult(int num1 , int num2){
+     int cal = num1 * num2;
+     return cal;
+    
+    
+    }
+      
+       public static int div(int num1 , int num2){
+     int cal = num1 / num2;
+     return cal;
+    
+    
+    }
+    
+}
